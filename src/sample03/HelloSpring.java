@@ -39,6 +39,11 @@ public class HelloSpring {
 		messageBean.sayHello("Kijin Bean 6 ");
 		System.out.println("==================================");
 		
+		MessageBean messageBean6 = (MessageBean)context.getBean("messageBean");
+		messageBean.sayHello("conflict test!!!!!!!!!");
+		System.out.println("==================================");
+		
+		
 		//각각의 객체를 생성했음에도 불구하고 같은 field를 증가시켰다. 왜  why
 		//
 		}
